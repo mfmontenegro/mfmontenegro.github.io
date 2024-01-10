@@ -6,14 +6,24 @@
     <style>
       body {
         background: black;
+        font-family: monospace;
       }
 
       main {
         display: flex;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
         height: 100%;
+        gap: 40px;
+      }
+      
+      #logo {
         animation: rotateAnimation 12s linear infinite;
+      }
+
+      #email {
+        color: white;
       }
 
       @keyframes rotateAnimation {
@@ -26,8 +36,9 @@
   <body>
     <main>
       <a href="https://www.instagram.com/vibracionesagencia/">
-        <img src="assets/logo.jpg" />
+        <img id="logo" src="assets/logo.jpg" />
       </a>
+      <a id="email" href="mailto:me@mfmontenegro.xyz">me@mfmontenegro.xyz</a>
     </main>
   </body>
 </html>
